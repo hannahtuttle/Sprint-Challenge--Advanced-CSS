@@ -271,7 +271,6 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
-    border: 1px solid red;
     padding: 0px;
   }
 }
