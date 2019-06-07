@@ -189,6 +189,10 @@ nav .navigation-links {
 nav .navigation-links a {
   color: #454A59;
   text-decoration: none;
+  transition: 1s;
+}
+nav .navigation-links a:hover {
+  transform: scale(1.5);
 }
 footer {
   color: #22283B;
@@ -299,10 +303,13 @@ footer {
   padding-top: 3%;
   font-size: 1.8rem;
   border-radius: 5px;
+  padding-bottom: 3%;
+  transition: 1s;
 }
 .home .walk .walk-text .btn:hover {
   background: #5b6b9a;
   color: #333333;
+  transform: scale(1.2);
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
