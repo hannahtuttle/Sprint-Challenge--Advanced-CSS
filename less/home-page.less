@@ -2,9 +2,25 @@
 
 .home {
 
-  background: red;
+ 
+  
   .intro {
 
+    .header-img {
+
+      @media @mobile {
+        padding-left: 1%;
+      }
+      
+      img{
+      border-radius: 5px;
+
+      @media @mobile {
+        width: 99%;
+      }
+    }
+    }
+    
     h2 {
       padding: 15px;
     }
@@ -20,11 +36,27 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 90%;
+      }
+
     }
   }
 
@@ -59,6 +91,12 @@
       }
 
       .btn {
+        .sign-btn(30%, 12%, @btn-bg-color, white);
+
+        &:hover {
+          background: lighten(@btn-bg-color, 30%);
+          color: darken(white, 80%);
+        }
       }
     }
 
